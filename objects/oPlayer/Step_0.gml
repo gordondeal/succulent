@@ -62,3 +62,5 @@ else
 }
 if (hsp != 0) image_xscale = sign(hsp);
 
+if(global.hp < 1) room_goto(GameOver);
+

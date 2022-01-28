@@ -1,0 +1,1 @@
+respawn = instance_nearest(x, y, oFallRespawn);
