@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "mechanics",
+    "path": "folders/Sprites/mechanics.yy",
   },
   "resourceVersion": "1.0",
   "name": "sFallDeath",
