@@ -16,24 +16,18 @@ y = clamp(y,view_h_half,room_height-view_h_half);
 //Update camera view
 camera_set_view_pos(cam,x-view_w_half,y-view_h_half);
 
-if (layer_exists("Clouds"))
+if (layer_exists("foreground"))
 {
-	layer_x("Clouds",x/6)	
+	layer_x("foreground",x/5)
+	layer_y("foreground",y-y/10-view_h_half/2)
 }
-if (layer_exists("Spikes"))
+if (layer_exists("midground"))
 {
-layer_x("Spikes",x/4)
+	layer_x("midground",x/6)	
+	layer_y("midground",y-y/15-view_h_half/2)
 }
-if (layer_exists("Clouds2"))
+if (layer_exists("background"))
 {
-	layer_x("Clouds2",x/8)	
-}
-if (layer_exists("Moon"))
-{
-layer_x("Moon",x/10)
-}
-if (layer_exists("Plateaus"))
-{
-	layer_x("Plateaus",x/5)	
-	
+	layer_x("background",x/8)
+	layer_y("background",y-view_h_half/2)
 }
