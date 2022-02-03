@@ -5,3 +5,4 @@ walksp = 4;
 jumpsp = 9;
 
 global.hp = 5;
+global.lastRoom = noone;
