@@ -1,6 +1,7 @@
 {
   "resources": [
     {"id":{"name":"StartScreen","path":"rooms/StartScreen/StartScreen.yy",},"order":1,},
+    {"id":{"name":"TileSet4","path":"tilesets/TileSet4/TileSet4.yy",},"order":3,},
     {"id":{"name":"Sprite14","path":"sprites/Sprite14/Sprite14.yy",},"order":3,},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"order":0,},
     {"id":{"name":"greentiles","path":"sprites/greentiles/greentiles.yy",},"order":0,},
@@ -10,6 +11,7 @@
     {"id":{"name":"sInvisibleWall","path":"sprites/sInvisibleWall/sInvisibleWall.yy",},"order":1,},
     {"id":{"name":"TileSet1","path":"tilesets/TileSet1/TileSet1.yy",},"order":0,},
     {"id":{"name":"Sprite11","path":"sprites/Sprite11/Sprite11.yy",},"order":1,},
+    {"id":{"name":"platform_tile","path":"sprites/platform_tile/platform_tile.yy",},"order":5,},
     {"id":{"name":"sFallDeath","path":"sprites/sFallDeath/sFallDeath.yy",},"order":0,},
     {"id":{"name":"TileSet2","path":"tilesets/TileSet2/TileSet2.yy",},"order":1,},
     {"id":{"name":"oFallDeath","path":"objects/oFallDeath/oFallDeath.yy",},"order":4,},
