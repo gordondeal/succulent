@@ -1,0 +1,1 @@
+if(room == GameOver) instance_destroy();

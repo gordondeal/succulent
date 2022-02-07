@@ -1,0 +1,1 @@
+audio_play_sound(level_1, 1, 1);

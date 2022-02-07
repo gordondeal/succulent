@@ -12,7 +12,7 @@ vsp = vsp + grv;
 if (place_meeting(x,y+1,oWall)) && (key_jump)
 {
 	vsp = -jumpsp
-	
+	audio_play_sound(jump, 1, 0);
 
 }
 
@@ -38,8 +38,13 @@ if (place_meeting(x,y+vsp,oWall))
 		y = y + sign(vsp);
 	}
 	vsp = 0;
+	if(inTheAir and !audio_is_playing(land)) audio_play_sound(land, 1, 0);
+	inTheAir = false;
+} else {
+	inTheAir = true;
 }
 y = y + vsp;
+
 
 //animation
 if (!place_meeting(x,y+1,oWall))
@@ -62,5 +67,25 @@ else
 }
 if (hsp != 0) image_xscale = sign(hsp);
 
-if(global.hp < 1) room_goto(GameOver);
+if(
+	!audio_is_playing(footstep1) and 
+	sprite_index == sPlayerR and 
+	round(image_index)%6 == 0){
+	audio_play_sound(footstep1, 1, 0);
+}
+
+if(global.hp < 1){
+	instance_destroy();
+	room_goto(GameOver);
+}
+
+if(hpPrev > global.hp and global.hp >= 1){
+	audio_play_sound(damage, 1, 0);
+}
+
+hpPrev = global.hp;
+
+
+
+
 
