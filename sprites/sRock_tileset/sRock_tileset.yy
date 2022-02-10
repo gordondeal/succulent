@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"64019bf8-b044-4d5c-bdb7-61e7870cd6f8","path":"sprites/sRock_tileset/sRock_tileset.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"64019bf8-b044-4d5c-bdb7-61e7870cd6f8","path":"sprites/sRock_tileset/sRock_tileset.yy",},"LayerId":{"name":"5ff411d2-417d-471e-8d0d-9275484ccb82","path":"sprites/sRock_tileset/sRock_tileset.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sRock_tileset","path":"sprites/sRock_tileset/sRock_tileset.yy",},"resourceVersion":"1.0","name":"64019bf8-b044-4d5c-bdb7-61e7870cd6f8","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"5635f7bd-bf73-42ce-a7ef-d20ac80058ff","path":"sprites/sRock_tileset/sRock_tileset.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"5635f7bd-bf73-42ce-a7ef-d20ac80058ff","path":"sprites/sRock_tileset/sRock_tileset.yy",},"LayerId":{"name":"3c6b6300-1ce3-4ae6-b4e6-c0d706b74a2c","path":"sprites/sRock_tileset/sRock_tileset.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sRock_tileset","path":"sprites/sRock_tileset/sRock_tileset.yy",},"resourceVersion":"1.0","name":"5635f7bd-bf73-42ce-a7ef-d20ac80058ff","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"sRock_tileset","path":"sprites/sRock_tileset/sRock_tileset.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"bb28cd4c-6945-4a72-a11c-679ddea13f70","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"64019bf8-b044-4d5c-bdb7-61e7870cd6f8","path":"sprites/sRock_tileset/sRock_tileset.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"c3628810-d469-47dc-9951-d531c234d7de","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5635f7bd-bf73-42ce-a7ef-d20ac80058ff","path":"sprites/sRock_tileset/sRock_tileset.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -65,7 +65,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"5ff411d2-417d-471e-8d0d-9275484ccb82","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"3c6b6300-1ce3-4ae6-b4e6-c0d706b74a2c","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
