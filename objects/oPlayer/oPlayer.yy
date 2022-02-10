@@ -5,7 +5,10 @@
   },
   "solid": false,
   "visible": true,
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "sPlayer",
+    "path": "sprites/sPlayer/sPlayer.yy",
+  },
   "persistent": true,
   "parentObjectId": null,
   "physicsObject": false,

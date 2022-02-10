@@ -3,7 +3,9 @@ vsp = 0;
 grv = 0.35;
 walksp = 4;
 jumpsp = 9;
+climbsp = 2;
 
+climb = false;
 inTheAir = false;
 instance_create_depth(x,y, -1, oLevelManager);
 

@@ -11,14 +11,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "jump.wav",
+  "soundFile": "jump_sound.wav",
   "duration": 1.217188,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "jump",
+  "name": "jump_sound",
   "tags": [],
   "resourceType": "GMSound",
 }
