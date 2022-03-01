@@ -3,15 +3,33 @@ key_right = keyboard_check(vk_right);
 key_up = keyboard_check(vk_up);
 key_down = keyboard_check(vk_down);
 key_jump = keyboard_check_pressed(vk_space);
+key_slide = keyboard_check_pressed(vk_shift);
+
+if(key_slide and !slide){
+	slide = true;
+	if(hsp == 0) hsp = image_xscale * walksp
+	hsp = hsp * 2;
+	sprite_index = sPlayerSlide;
+	audio_play_sound(slide_sound, 1, 0);
+}
+
+
+
+if(slide and (
+	(key_right and hsp < 0) or 
+	(key_left and hsp > 0) or
+	key_jump)) slide = false;
 
 //calculate horizonatal move
-var _move = climb ? 0 : key_right - key_left;
-hsp = _move * walksp;
+if(!slide){
+	var _move = climb ? 0 : key_right - key_left;
+	hsp = _move * walksp;
+}
 
 if((climb and key_jump) or !place_meeting(x,y,oLadder)) climb = false;
 
-if(!climb) vsp = vsp + grv;
-else vsp = (key_down - key_up) * climbsp;
+if(climb) vsp = (key_down - key_up) * climbsp;
+else vsp = vsp + grv;
 
 var jump = key_jump and !key_down;
 var drop = key_jump and key_down;
@@ -26,7 +44,7 @@ if(ladder && key_up && !climb){
 
 
 
-if (place_meeting(x,y+1,oWall) or place_meeting(x,y,oLadder)) && jump
+if (place_meeting(x,y+1,oWall) or place_meeting(x,y,oLadder)) && jump && !slide
 {
 	vsp = -jumpsp
 	audio_play_sound(jump_sound, 1, 0);
@@ -67,16 +85,18 @@ if (place_meeting(x,y+vsp,oWall))
 y = y + vsp;
 
 
+
+
 //animation
 if(climb){
 	if(vsp != 0) image_speed = 1;
 	else image_speed = 0;
 	sprite_index = sPlayerClimb
-} else if (!place_meeting(x,y+1,oWall)){
+} else if (!place_meeting(x,y+1,oWall) and !slide){
 	sprite_index = sPlayerA;
 	image_speed = 0;
 	if (vsp > 0) image_index = 1; else image_index = 0;
-} else{
+} else if(!slide) {
 	image_speed = 1;
 	if (hsp == 0)
 	{
@@ -84,7 +104,7 @@ if(climb){
 	}
 	else
 	{
-	sprite_index = sPlayerR;	
+		sprite_index = sPlayerR;	
 	}
 }
 if (hsp != 0) image_xscale = sign(hsp);

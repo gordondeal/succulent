@@ -7,6 +7,7 @@ climbsp = 2;
 
 climb = false;
 inTheAir = false;
+slide = false;
 instance_create_depth(x,y, -1, oLevelManager);
 
 global.hp = 2;
